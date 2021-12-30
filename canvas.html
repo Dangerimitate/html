@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>canvas</title>
+<style>
+body {background-color:#0e1111;
+	}
+h1 {color:#000080;
+	text-align:center;
+	font-family:cursive;
+	}
+#p  {color:green;
+	font-size:100%;
+	font-family:cursive;
+	}
+#c {color:white;
+	}
+</style>
+</head>
+<body>
+<h1>Canvas</h1>
+<iframe src="demo_iframe.htm" height="auto" width="100%" style="border:2px solid white" name="iframe"></iframe>
+<p id="p">NICHE DIYE GAYE BUTTONS PAR CLICK KARO MADERJAT LAG:</p>
+<p><button onclick="rahul()" style="color:#ff2800">line</button>
+   <button onclick="shiva()" style="color:#ff2800">circle</button>
+</p>
+<p>
+<canvas id="Canvas" width="200" heigth="100" style="border:2px solid white">your browsre tagg hhjkk</canvas>
+<canvas id="circle" width="200" heigth="100" style="border:2px solid white">my browsre tagg hhjkk</canvas>
+</p>
+<script>
+function rahul() {
+var c = document.getElementById("Canvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+	}
+</script>
+<script>
+var c = document.getElementById("circle");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World",10,50");
+</script>
+</body>
+</html>

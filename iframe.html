@@ -1,0 +1,72 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>iframe</title>
+<meta charset="UTF-8">
+<style>
+body {background-color:#0e1111;}
+h1 {color:#b80f0a;
+   font-family:monospace;
+   text-align:center;
+   }
+span#a {color:white;
+    background-color:#111e6c;
+    font-family:cursive;
+  }
+ul {list-style-type:none;
+   padding:0;
+   margin:0;
+   overflow:hidden;
+   background-color:#008081;
+  }
+li a {display:inline-block;
+   padding:16px;
+   text-align:center;
+   text-decoration:none;
+   color:white;
+   font-family:fantasy;
+  }
+li a:hover {background-color:#3fe0d0;
+    text-decoration:underline;
+    border:2px solid white;
+  }
+h2 a {color:#ff7417;
+   text-align:center;
+   text-decoration:none;
+   font-family:verdana;
+  }
+h2 a:hover {color:#0f52ba;
+    text-decoration:underline;
+   }
+</style>
+</head>
+<body>
+<h1>Dyana<span Id="a">mite</span></h2>
+<ul>
+<li style="float:left"><a href="#home">Home</a></li>
+<li style="float:left"><a href="#ff">Trending</a></li>
+<li style="float:left"><a href="#h">Most seen</a></li>
+<li style="float:left"><a href="#live">live</a></li>
+<li style="float:right"><a href="#set">Setting</a></li>
+</ul>
+<p Id="demo"><button type="button" onclick="shraddha()" style="color:blue;float:right">Time</button></p>
+<script>
+function shraddha() {
+  document.getElementById('demo').innerHTML=Date();
+  document.getElementById('demo').style.color="red";
+  document.getElementById('demo').style.float="right";
+  }
+</script>
+<iframe height="300px" width="100%" src="demo_iframe.htm" boder="2px solid green" name="rahul"></iframe>
+<h2><a href="https://yesmovies.zone/" target="rahul">Jessa rhodes:-</a></h2>
+<center><img src="a/jessa.jpg" width="300" height="400"></center>
+</div>
+<hr>
+<div>
+<h2><a href="https://www.megatube.xxx/top-photos" target="rahul">Alexandra monique:-</a></h2>
+<center><img src="a/monoque.jpg" width="300" height="400"></center>
+</div>
+<hr>
+<pre style="text-align:center"><button onclick="document.location='iframe1.html'" style="color:#111e6c">Next Page</button></pre>
+</body>
+</html>
